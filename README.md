@@ -50,25 +50,25 @@ No additional pip packages required.
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/email-spoofer.git
-cd email-spoofer
+git clone https://github.com/rohitabdullah/mail-spoof.git
+cd mail-spoof
 
 # Make script executable (optional)
-chmod +x email_spoofer.py
+chmod +x mailspoof.py
 
 # Run script
-python3 email_spoofer.py
+python3 mailspoof.py
 ```
 
 ### Windows
 
 ```powershell
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/email-spoofer.git
-cd email-spoofer
+git clone https://github.com/rohitabdullah/mail-spoof.git
+cd mail-spoof
 
 # Run script
-python email_spoofer.py
+python mailspoof.py
 ```
 
 ---
@@ -77,16 +77,17 @@ python email_spoofer.py
 
 1. Terminal will **clear automatically** at start.
 2. Follow the **interactive prompts**:
-
-| Step | Input Field            | Notes                                                                                     |
-| ---- | ---------------------- | ----------------------------------------------------------------------------------------- |
-| 1️⃣  | **Sender Email**       | Your Gmail account (used for SMTP authentication).                                        |
-| 2️⃣  | **Gmail App Password** | 16-character App Password (acknowledges immediately after 16 chars).                      |
-| 3️⃣  | **Receiver Email**     | The target email (for safe testing, use your own).                                        |
-| 4️⃣  | **From Email**         | Appears in the 'From' field (spoofed).                                                    |
-| 5️⃣  | **Reply-To Email**     | Replies will go here.                                                                     |
-| 6️⃣  | **Email Subject**      | Subject line of the email.                                                                |
-| 7️⃣  | **Email Body**         | Multi-line content; finish with **Ctrl+D** (Linux/macOS) or **Ctrl+Z + Enter** (Windows). |
+_________________________________________________________________________________________________________________________________
+| Step | Input Field            | Notes                                                                                          |
+| ---- | ---------------------- | ---------------------------------------------------------------------------------------------- |
+| 1️⃣  | **Sender Email**       | Your Gmail account (used for SMTP authentication).                                             |
+| 2️⃣  | **Gmail App Password** | 16-character App Password. (Obtaining methos is given [Here](#gmail-app-password-guide)        |
+| 3️⃣  | **Receiver Email**     | The target email (for safe testing, use your own; or just use there 😑).                       |
+| 4️⃣  | **From Email**         | Appears in the 'From' field (spoofed mail address. not always accurate but works sometimes.).  |
+| 5️⃣  | **Reply-To Email**     | Replies will go here.                                                                          |
+| 6️⃣  | **Email Subject**      | Subject line of the email.                                                                     |
+| 7️⃣  | **Email Body**         | Multi-line content; finish with **Ctrl+D** (Linux/macOS) or **Ctrl+Z + Enter** (Windows).      |
+|_____|_________________________|________________________________________________________________________________________________|
 
 * The script uses Gmail **SMTP** with `STARTTLS`.
 * Custom headers:
@@ -99,28 +100,27 @@ python email_spoofer.py
 
 ## User Manual
 
-* **Password Handling:** Immediate acknowledgement after 16 non-space characters. Spaces are stripped before sending.
+* **Password Handling:** Immediate acknowledgement after 16 non-space characters (App Password from **Google**). Spaces are stripped before sending.
 * **Email Features:** Multi-line body, custom headers, reply-to management, secure Gmail authentication.
-* **Terminal:** Clears automatically for each run, making output readable and clean.
+* **Terminal:** Clears automatically for each run, making output readable, clean for less mistakes.
 
 ---
 
 ## Gmail App Password Guide
 
 1. Visit [Google Account Security](https://myaccount.google.com/security)
-2. Enable **2-Step Verification** if not already enabled.
-3. Click **App passwords**
-4. Select **Mail** as the app and **Other** for the device (e.g., "SpoofMail").
-5. Click **Generate**
-6. Use the **16-character password** in this script. Remove spaces if any.
+2. Enable **2-Step Verification** if not already enabled. (**Make sure 2-Step Verification is ON**)
+3. Click **App passwords** or Search for it (**if can't find**).
+4. Select **Mail** as the app and **Other** for the device & Choose a name (e.g., "SpoofMail").
+   **NOTE:** If using **Mobile** device, Enter name directly (Update August,2025.)
+5. Click **Generate** or Respective button.
+6. Use the **16-character password** in the Tool. Remove spaces if any.
 
 ---
 
 ## License
-
-## License
 This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.  
-You are free to use, modify, and distribute this software **for educational and legal purposes only**, following the terms of the GPL.  
+You are free to use, modify, and distribute this Tool but Can't claim it yor own. Use **for educational and legal purposes only**, following the terms of the GPL.  
 
 For more information, see the [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
